@@ -22,13 +22,13 @@ const ProductTitlePrice = ({
               <span className="mx-1.5 inline-block h-3 w-px bg-black/25 align-middle" />
               <span>+50mil vendidos</span>
             </div>
-            
+
             {/* Rating */}
             <a href="#" className="flex items-center gap-1.5 no-underline">
               <span className="text-xs sm:text-sm font-medium text-[#3483FA]">4.9</span>
               <div className="flex items-center text-[#3483FA]">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={`star-${i}`} size={12} fill="currentColor" strokeWidth={0} />
+                  <Star key={i} size={12} fill="currentColor" strokeWidth={0} />
                 ))}
               </div>
               <span className="text-xs sm:text-sm text-[#3483FA] hover:text-[#2968C8]">(160)</span>
@@ -49,7 +49,7 @@ const ProductTitlePrice = ({
           </h1>
         </>
       )}
-      
+
       {showPriceSection && (
         <>
           <div className="mb-1 mt-4 sm:mt-5">
@@ -65,26 +65,27 @@ const ProductTitlePrice = ({
           <a href="#" className="mt-1 inline-block text-sm text-interactive-primary hover:text-interactive-hover">
             Ver os meios de pagamento
           </a>
-          
+
           <p className="mt-3 text-sm text-text-primary">
             <span className="font-semibold text-[#00A650]">Receba grátis</span> entre quarta-feira e sexta-feira
           </p>
-          
+
           <p className="mt-2 text-sm text-text-primary">
             Vendido por <span className="text-interactive-primary">Loja World Games</span>
           </p>
-          
+
           <p className="mt-0.5 text-xs text-text-secondary">
             +100 vendas
           </p>
-          
+
           <p className="mt-2 text-sm font-bold text-text-primary">
             Último disponível!
           </p>
-          
+
           <div className="mt-3 flex flex-col gap-2">
             <Button
               size="lg"
+              onClick={() => window.open("https://www.youtube.com", "_blank")}
               className="w-full h-12 bg-primary hover:bg-interactive-hover text-primary-foreground font-semibold text-base rounded-md"
             >
               Comprar agora
