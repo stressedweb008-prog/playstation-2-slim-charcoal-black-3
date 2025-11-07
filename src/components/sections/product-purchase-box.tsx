@@ -60,6 +60,9 @@ const ProductPurchaseBox = () => {
       <div className="mt-6 flex flex-col gap-y-2">
         <Button
           size="lg"
+          onClick={() => {
+            window.location.href = "https://www.youtube.com";
+          }}
           className="w-full h-12 bg-primary hover:bg-interactive-hover text-primary-foreground font-semibold text-base rounded-md"
         >
           Comprar agora
